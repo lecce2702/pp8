@@ -44,7 +44,7 @@ int main(int argc, char* argv[]){
 		printf("Die gesuchte Zahl kommt nicht in der Liste vor!\n");
 	}	
 	else{
-		printf("Die gesuchte Zahl %d kommt an Stelle %d der Liste vor!\n", x, ergebnis); 
+		printf("Die gesuchte Zahl %d kommt an Stelle %d der Liste vor!\n", x, ergebnis+1); 
 	}
 	return 0;
 }
