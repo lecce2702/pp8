@@ -17,7 +17,7 @@ int suche(int liste[], int suche, int laenge)
 int main(int argc, char* argv[]){
 	
 	int option;
-	int x;
+	int suchwert;
 	int ergebnis;
 	int liste[] = {8, 5, 10, 6, 3, 9};
 
@@ -40,13 +40,13 @@ int main(int argc, char* argv[]){
 	}
 
 	printf("Nach welcher Zahl wollen Sie suchen?\n");
-	scanf("%d", &x);
+	scanf("%d", &suchwert);
 	
-	if((ergebnis = suche(liste, x, sizeof liste/ sizeof liste[0])) == -1){ //Wenn Suchwert mit keinem Element des Arrays matched
+	if((ergebnis = suche(liste, suchwert, sizeof liste/ sizeof liste[0])) == -1){ //Wenn Suchwert mit keinem Element des Arrays matched
 		printf("Die gesuchte Zahl kommt nicht in der Liste vor!\n");
 	}	
 	else{
-		printf("Die gesuchte Zahl %d kommt an Stelle %d der Liste vor!\n", x, ergebnis+1); 
+		printf("Die gesuchte Zahl %d kommt an Stelle %d der Liste vor!\n", suchwert, ergebnis+1); 
 	}
 	return 0;
 }
