@@ -34,6 +34,7 @@ int main(int argc, char* argv[]){
 
 		default:
 			printf("Etwas ist schiefgelaufen!\n");
+			printf("Benutze -h fuer die Hilfe!\n");
 			exit(0);
 	}
 
