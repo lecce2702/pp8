@@ -6,8 +6,8 @@ const char VERSIONSNR[] = "0.1";
 int suche(int liste[], int suche, int laenge)
 {
 	for(int i=0; i < laenge; i++){
-		if(liste[i] == suche){
-			return i;
+		if(liste[i] == suche){ //Jedes Element des Arrays mit dem Suchwert abgleichen. 
+			return i; 
 		}
 	}
 	return -1;
@@ -40,7 +40,7 @@ int main(int argc, char* argv[]){
 	printf("Nach welcher Zahl wollen Sie suchen?\n");
 	scanf("%d", &x);
 	
-	if((ergebnis = suche(liste, x, sizeof liste/ sizeof liste[0])) == -1){
+	if((ergebnis = suche(liste, x, sizeof liste/ sizeof liste[0])) == -1){ //Wenn Suchwert mit keinem Element des Arrays matched
 		printf("Die gesuchte Zahl kommt nicht in der Liste vor!\n");
 	}	
 	else{
